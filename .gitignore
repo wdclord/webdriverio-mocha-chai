@@ -2,3 +2,7 @@ reports/
 error_shots/
 cookies.json
 node_modules/
+
+# IntellijIdea files
+/**/.idea/*
+!**/.idea/runConfigurations
