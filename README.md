@@ -26,8 +26,7 @@
     ```
 
 ## Run tests
-Execute:
-
+1. Execute:
     ```
     npm run test
     ```
