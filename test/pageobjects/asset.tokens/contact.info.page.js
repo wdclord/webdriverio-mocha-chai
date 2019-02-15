@@ -23,13 +23,7 @@ class ContactInfoPage extends Page {
     }
 
     getValidationText(field) {
-        const validationText =field.$('../..').getText();
-
-        return validationText;
-    }
-
-    getPhoneValidationText() {
-        const validationText =this.phoneField.$('../../..').getText();
+        const validationText =field.$('../../..').$('.ant-form-explain').getText();
 
         return validationText;
     }

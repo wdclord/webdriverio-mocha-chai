@@ -41,11 +41,9 @@ describe('Asset tokens tests', () => {
 
         ContactInfoPage.nextButton.click();
 
-        browser.pause(1000);
-
         const fullNameValidationText = ContactInfoPage.getValidationText(ContactInfoPage.fullNameField);
         const emailValidationText = ContactInfoPage.getValidationText(ContactInfoPage.emailField);
-        const phoneValidationText = ContactInfoPage.getPhoneValidationText();
+        const phoneValidationText = ContactInfoPage.getValidationText(ContactInfoPage.phoneField);
         const telegramContactValidationText = ContactInfoPage.getValidationText(ContactInfoPage.telegramConcactField);
 
         expect(fullNameValidationText).to.be.equal(expectedText);
